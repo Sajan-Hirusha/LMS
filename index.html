@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div id="head">
+
+
+
+    <div id="logo">
+      <img src="Images/logo.png" alt="logo">
+    </div>
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class=" slideImages carousel-item active">
+          <div id="intro1">
+            <p class="p">Welcome to Our university</p>
+            <h1>We Help You Learn What You Love</h1>
+            <p class="para">" Explore our diverse degree programs and convenient online paid courses, designed to
+              propel your academic journey and advance your career prospects with flexibility and excellence. "</p>
+          </div>
+          <img src="Images/headImage1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class=" slideImages carousel-item">
+          <div id="intro2">
+            <p class="p">Gather knowledge.</p>
+            <h1>Online Courses</h1>
+            <p class="para">"Welcome to our university's online learning hub, where knowledge meets convenience.
+              Explore our curated selection of paid courses, designed to expand your skills, advance your career,
+              and enrich your personal development journey."</p>
+          </div>
+          <img src="Images/headImage8.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class=" slideImages carousel-item">
+          <div id="intro3">
+            <p class="p">Study & make friends </p>
+            <h1>Elevate skills with Innovative learning</h1>
+            <p class="para">"Join a vibrant community of learners at our university, dedicated to empowering
+              individuals like you to thrive in a dynamic and competitive world."</p>
+          </div>
+          <img src="Images/headImage7.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <nav id="nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Courses</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Contact US</a></li>
+        <li><a href="">Teachers</a></li>
+        <li>
+          <select name="studentType" id="sType">
+            <option value="login">Login here</option>
+            <option value="internalStudents">University Students Loging</option>
+            <option value="onlineStudentsLogin">online courses Students Loging</option>
+            <option value="onlineStudentsRegister"> Register for online Courses</option>
+          </select>
+        </li>
+      </ul>
+  </nav>
+
+  <div id="navigation" class="sidenavigation">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">Courses</a></li>
+    <li><a href="#skills">Pricing</a></li>
+    <li><a href="#education">Contact US</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Teachers</a></li>
+    <li>
+      <div class="dropdown" >
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          sign In / Sign Up
+        </a>
+      
+        <ul class="dropdown-menu" >
+          <li ><a class="dropdown-item" href="universityLoggin.html">University Students Loging</a></li>
+          <li><a class="dropdown-item" href="onlineLoggin.html">online courses Students Loging</a></li>
+          <li ><a class="dropdown-item" href="onlineRegister.html">Register for online Courses</a></li>
+        </ul>
+      </div>
+    </li>
+</div>
+<span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()"><img id="menuImg" src="Images/menu .png"> </span>
+
+
+    <div id="display1">
+      <div id="onlineLoggin">
+        <form action="">
+          <h2>Login for courses</h2>
+          <input type="text" name="username" id="username" placeholder="Username or Email" required><br>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <button type="reset">Clear</button>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div id="display2">
+      <div id="registrationForm">
+        <form method="post" action="" id="form">
+          <div class="form" id="formDiv1">
+            <label for="fName"> First Name</label><br>
+            <input type="text" name="fName" id="fName"><br>
+            <label for="lName"> Last Name</label><br>
+            <input type="text" name="lName" id="lName"><br>
+            <label for="birthday">Birthday</label><br>
+            <input type="date" name="birthday" id="birthday"><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <button type="button" id="next1">Next &rarr;</button>
+          </div>
+
+          <div class="form" id="formDiv2">
+            <label for="nic">NIC</label>
+            <input type="text" name="nic" id="nic"><br>
+            <label for="homeAddress">Home Address</label>
+            <input type="text" name="homeAddress" id="homeAddress"><br>
+            <label for="mNumber">Mobile</label><br>
+            <input type="tel" name="mNumber" id="mNumber"><br>
+            <label for="hNumber" id="hNumber">Home</label><br>
+            <input type="tel" name="hNumber" id="hNumber"><br>
+            <button type="button" id="back1">Back</button>
+            <button type="button" id="next2">Next</button>
+          </div>
+
+          <div class="form" id="formDiv3">
+            <label for="degree">Degree Program</label>
+            <select name="degree" id="degree">
+              <option value="CS">Bachelor of Science in Computer Science (BSc. in CS)</option>
+              <option value="IS">Bachelor of Science in Information Systems (BSc. in IS)</option>
+              <option value="ICT">Bachelor of Information and Communication Technology Honours</option>
+              <option value="BT">Bachelor of Biosystems Technology Honours in Agriculture</option>
+              <option value="ET">Bachelor of Engineering Technology Honours in Instrumentation and Automation
+              </option>
+              <option value="LAW">Degree of Bachelor of Laws</option>
+              <option value="MEDICINE">Bachelor of Medicine, Bachelor of Surgery</option>
+            </select><br>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="regPassword1">Password</label>
+            <input type="Password" name="regPassword1" id="regPassword1"><br>
+            <label for="regPassword2">Confirm Password</label>
+            <input type="Password" name="regPassword2" id="regPassword2"><br>
+            <button type="button" id="back2">Back</button>
+            <button type="button" id="submit">Submit</button>
+          </div>
+        </form>
+        <div class="step-raw">
+          <div id="progress"></div>
+          <div class="step-col">Step 1</div>
+          <div class="step-col">Step 2</div>
+          <div class="step-col">Step 2</div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="display3">
+      <div id="universityLoggin">
+        <form action="">
+          <h2>University Login </h2>
+          <input type="text" name="username" id="username" placeholder="Username or Email" required><br>
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          <button type="reset">Clear</button>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

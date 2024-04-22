@@ -1,0 +1,135 @@
+#head {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Images/loggingPage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+#logo {
+  z-index: 1;
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+#logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.dropdown {
+  position: relative;
+  left: 73%;
+  bottom: 20px;
+  z-index: 2;
+}
+.dropdown .btn {
+  background-color: rgba(5, 11, 65, 0.1);
+  margin-left: 3px;
+  margin-right: 7px;
+  margin-top: 10px;
+  padding: 0;
+  border: none;
+  color: #ffad05;
+}
+.dropdown .dropdown-item {
+  font-size: 13px !important;
+}
+
+h1 {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  padding-left: 30px;
+  color: white !important;
+  font-size: 20px !important;
+}
+
+#universityLoggin {
+  z-index: 1;
+  padding: 30px 20px;
+  padding-left: 43px;
+  background-color: #ffffff;
+  width: 300px;
+  height: 350px;
+  border-top: 7px solid #0c054d;
+  border-bottom: 20px solid #0c054d;
+  border-left: 3px solid #0c054d;
+  border-right: 3px solid #0c054d;
+  border-radius: 20px;
+  opacity: 0.8;
+  margin: auto;
+}
+#universityLoggin h2 {
+  color: #777;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  text-decoration: underline;
+}
+#universityLoggin label {
+  margin-left: 7px;
+}
+#universityLoggin input {
+  padding: 10px 5px;
+  margin: 10px 0;
+  background: transparent;
+  outline: none;
+  width: 88%;
+  border: 0;
+  border-bottom: 1px solid #999;
+}
+#universityLoggin ::placeholder {
+  color: #777;
+}
+#universityLoggin button {
+  width: 80px;
+  height: 30px;
+  margin: 40px 13px;
+  background: linear-gradient(to right, #0c054d, #ffad05);
+  border: 0;
+  border-radius: 13px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  #logo img {
+    width: 60px;
+    height: 30px;
+  }
+  .dropdown {
+    left: 61%;
+    bottom: 20px;
+    z-index: 2;
+  }
+  .dropdown .btn {
+    padding: 5px 10px;
+    font-size: 11px !important;
+  }
+  .dropdown .dropdown-item {
+    font-size: 11px !important;
+  }
+  h1 {
+    width: 82%;
+    font-size: 16px !important;
+  }
+  #universityLoggin {
+    padding: 30px 10px;
+    padding-left: 34px;
+    width: 240px;
+  }
+  #universityLoggin h2 {
+    font-size: 20px;
+  }
+  #universityLoggin button {
+    width: 60px;
+    margin: 40px 10px;
+  }
+}
+
+/*# sourceMappingURL=universityLoggin.css.map */

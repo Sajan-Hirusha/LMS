@@ -1,0 +1,647 @@
+#head {
+  height: 100vh;
+  overflow: hidden;
+  // background-image:linear-gradient(to bottom, rgb(26, 9, 122),rgb(5, 8, 82));
+  background-image: linear-gradient(transparent 2%, rgb(8, 7, 26) 28%);
+}
+  #logo {
+    position:absolute;
+   top: 25px;
+    left: 70px;
+    z-index: 4;
+
+    img {
+      width: 100px;
+      height: 30px;
+
+    }
+  }
+
+  .slideImages {
+    height: 650px;
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: 0%;
+      height: 650px;
+      width: 100%;
+      opacity: 0.4;
+    }
+
+    #intro1,
+    #intro2,
+    #intro3 {
+      width: 600px;
+      z-index: 1;
+      position: relative;
+      top: 28%;
+      left: 10%;
+
+      p,
+      h1 {
+        color: white;
+      }
+    }
+  }
+
+  #intro1,
+  #intro2,
+  #intro3 {
+    .p {
+      font: 700 34px Montserrat;
+      letter-spacing: 1.4px;
+      color: #01366bef !important;
+    }
+
+    h1 {
+      letter-spacing: 1.7px;
+      position: relative;
+      bottom: 10px;
+      font-size: 58px;
+      font-weight: 700;
+    }
+
+    .para {
+      letter-spacing: 1.2px;
+      font-size: 14px;
+    }
+  }
+
+  #intro2 {
+    .p {
+      font-size: 30px;
+    }
+
+    h1 {
+      letter-spacing: 2px;
+    }
+  }
+
+  #intro3 {
+    .p {
+      font-size: 30px;
+    }
+
+    h1 {
+      letter-spacing: 1.1px;
+    }
+  }
+
+  #nav {
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        list-style-type: none;
+        margin: 16px;
+        font-weight: 700;
+
+        a {
+          text-decoration: none;
+          color: #01366bef;
+        }
+      }
+    }
+
+    #sType {
+      width: 110px;
+      font-weight: 700;
+      border: none;
+      background: transparent;
+      outline: none;
+      color: #01366bef;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      option {
+        font-size: 14px;
+      }
+    }
+  }
+
+
+//    NAVBAR 2 OPEN
+#navigation {
+  display: none;
+  .btn{
+    background-color: rgba(5, 11, 65, 0.1) ;
+    margin-left: 3px;
+    margin-right: 7px;
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    color: #ffad05;
+  }
+}
+.dropdown-item{
+  font-size:11px !important;
+  color:black !important;
+}
+.open {
+  display: none;
+}
+
+#menuImg {
+  width: 30px;
+  height: 25px;
+  opacity: 0.8;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  z-index: 2;
+}
+
+.sidenavigation {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(5, 11, 65, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+    line-height: 1.5;
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+//    NAVBAR 2 CLOSE
+
+
+
+  #registrationForm {
+
+    background-color: #ffffff;
+    width: 360px;
+    height: 500px;
+    position: relative;
+    left: 58%;
+    bottom: 550px;
+    overflow: hidden;
+    border-top: 7px solid #0c054d;
+    border-bottom: 20px solid #0c054d;
+    border-left: 3px solid #0c054d;
+    border-right: 3px solid #0c054d;
+    border-radius: 20px;
+    z-index: 10;
+    opacity: 0.8;
+    .form {
+      padding: 20px;
+      border-radius: 20px;
+      width: 300px;
+      position: absolute;
+      top: 60px;
+      left: 15px;
+      transition: 0.5s;
+      background-color: rgba(68, 14, 218, 0.041);
+      margin-left: 10px;
+
+      p {
+        margin-left: 16px;
+      }
+
+      label {
+        margin-left: 16px;
+
+      }
+
+      #next1 {
+        margin-left: 88px;
+      }
+      #next2,#back1,#back2,#submit{
+        position: relative;
+        left: 13px;
+      }
+
+      input,
+      select {
+        padding: 4px 4px;
+        margin-left: 16px;
+        margin-bottom: 20px;
+        margin-top: 2px;
+        background: transparent;
+        outline: none;
+        width: 88%;
+        border-radius: 7px;
+      }
+
+      button {
+        width: 100px;
+        height: 35px;
+        margin: 0 8px;
+        background: linear-gradient(to right, #0c054d, #ffad05);
+        border-radius: 17px;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    #formDiv2 {
+      left: 450px;
+    }
+
+    #formDiv3 {
+      left: 450px;
+    }
+
+    .step-raw {
+      width: 360px;
+      height: 40px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 -1px 5px -1px #000;
+      position: relative;
+
+      .step-col {
+        width: 120px;
+        text-align: center;
+        color: whitesmoke;
+        position: relative;
+      }
+
+      #progress {
+        position: absolute;
+        height: 100%;
+        width: 120px;
+        background: linear-gradient(to right, #0c054d, #ffad05);
+        transition: 1s;
+
+        &::after {
+          content: '';
+          height: 0;
+          width: 0;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          position: absolute;
+          right: -20px;
+          top: 0;
+          border-left: 20px solid #ffad06;
+        }
+      }
+    }
+  }
+
+
+
+  #universityLoggin,
+  #onlineLoggin {
+    z-index: 4;
+    padding: 30px 20px;
+    padding-left: 43px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    top: 160px;
+    left: 63%;
+    border-top: 7px solid #0c054d;
+    border-bottom: 20px solid #0c054d;
+    border-left: 3px solid #0c054d;
+    border-right: 3px solid #0c054d;
+    border-radius: 20px;
+    opacity: 0.8;
+
+    h2 {
+      color: #777;
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-right: 25px;
+      text-decoration: underline;
+    }
+
+    label {
+      margin-left: 7px;
+    }
+
+    input {
+      padding: 10px 5px;
+      margin: 10px 0;
+      background: transparent;
+      outline: none;
+      width: 88%;
+      border: 0;
+      border-bottom: 1px solid #999;
+    }
+
+    ::placeholder {
+      color: #777;
+    }
+
+    button {
+      width: 80px;
+      height: 30px;
+      margin: 40px 13px;
+      background: linear-gradient(to right, #0c054d, #ffad05);
+      border: 0;
+      border-radius: 13px;
+      outline: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+
+
+#display1,
+#display2,
+#display3 {
+  display: none;
+  animation: loading 1s linear;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 1230px) {
+  #logo {
+
+    img {
+      width: 70px;
+
+    }
+  }
+
+  #intro1,
+  #intro2,
+  #intro3 {
+   top:37% !important;
+   left: 12% !important;
+    width: 450px !important;
+    .p{
+      font-size: 25px;
+    }
+    h1{
+      font-size: 40px ;
+    }
+    .para{
+      font-size: 11px;
+    }
+  }
+
+
+  #registrationForm {
+    width: 300px;
+    height: 480px;
+    left: 61%;
+    bottom: 520px;
+
+    .form {
+      padding: 10px;
+      width: 260px;
+      left: 7px;
+      #next2,#back1,#back2,#submit{
+        position: relative;
+        left: 40px;
+      }
+
+      button {
+        font-size: 12px;
+        width: 60px;
+        height: 35px;
+      }
+    }
+    .step-raw {
+      width: 300px;
+
+      .step-col {
+        width: 100px;
+      }
+
+      #progress {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  #intro1,
+  #intro2,
+  #intro3 {
+    width: 380px !important;
+    .p{
+      font-size: 20px;
+    }
+    h1{
+      font-size: 30px ;
+    }
+    .para{
+      font-size: 11px;
+    }
+  }
+  #nav {
+    right: 20px;
+
+    ul {
+
+      li {
+        margin: 10px;
+
+        a {
+         font-size: 13px;
+        }
+      }
+    }
+  }
+  #registrationForm {
+    width: 240px;
+    height: 400px;
+    left: 64.3%;
+    bottom: 480px;
+
+    .form {
+      padding: 5px;
+      width: 200px;
+      top: 47px;
+      
+      #next1 {
+        margin-left: 67px;
+      }
+
+      #next2,#back1,#back2,#submit{
+        left: 20px;
+      }
+      input,
+      select {
+        padding: 2px 2px;
+        margin-bottom: 10px;
+      }
+      
+    }
+
+    .step-raw {
+      height: 30px;
+      width: 240px;
+
+      .step-col {
+        width: 80px;
+      }
+
+      #progress {
+        width: 80px;
+
+        &::after {
+          content: '';
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+        }
+      }
+    }
+  }
+  #universityLoggin,
+  #onlineLoggin {
+    padding: 30px 10px;
+    padding-left: 34px;
+    width: 240px;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    button {
+      width: 60px;
+      margin: 40px 10px;
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #logo {
+    left:80% !important;
+  }
+
+  #nav{
+    display: none;
+  }
+  
+  #navigation {
+    display: initial;
+
+  }
+
+  .open {
+    display: initial;
+  }
+
+
+  #intro1,
+  #intro2,
+  #intro3 {
+   top:30% !important;
+
+  }
+}
+
+
+@media only screen and (max-width: 511px) {
+
+  #logo {
+    left:76% !important;
+  }
+  #intro1,
+  #intro2,
+  #intro3 {
+    width: 320px !important;
+    .p{
+      font-size: 17px;
+    }
+    h1{
+      font-size: 25px ;
+    }
+    .para{
+      font-size: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  #logo {
+    left:73% !important;
+  }
+
+  #intro1,
+  #intro2,
+  #intro3 {
+    width: 260px !important;
+    .p{
+      font-size: 13px;
+    }
+    h1{
+      font-size: 20px ;
+    }
+    .para{
+      font-size: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #logo {
+    left:70% !important;
+  }
+  #intro1,
+  #intro2,
+  #intro3 {
+    width: 220px !important;
+    .p{
+      font-size: 12px;
+    }
+    h1{
+      font-size: 17px ;
+    }
+    .para{
+      font-size: 7px;
+    }
+  }
+}
